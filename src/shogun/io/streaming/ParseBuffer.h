@@ -247,7 +247,7 @@ template <class T> CParseBuffer<T>::CParseBuffer(int32_t size)
 	pthread_mutex_init(read_lock, NULL);
 	pthread_mutex_init(write_lock, NULL);
 
-	free_vectors_on_destruct = true;
+	free_vectors_on_destruct = false;
 }
 
 template <class T> CParseBuffer<T>::~CParseBuffer()
